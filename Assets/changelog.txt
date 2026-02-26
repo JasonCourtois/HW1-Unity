@@ -1,7 +1,7 @@
 AI Usage:
 
 I did use Copilot (using Claude Sonnet 4.5) to debug an issue with my color changing script.
-The color changing was occurring way too fast. This was because I didn't save a reference of the old color before making the Color.lerp() call.
+The color changing was occurring way too fast. This happened because I didn't save a reference of the old color before making the Color.lerp() call.
 This meant that as the color was changing to the new color, I was lerping from the in-between color to the new desired color every frame. This caused a rapid change in color.
 Copilot caught this, so I then made a change to store the old material color in a variable before calling Color.lerp().
 
@@ -23,5 +23,8 @@ Normal Map Creator: https://cpetry.github.io/NormalMap-Online/
 
 I used these resources to create the "Normal Leaf" Material.
 
-I also used the Unity Pro Builder component to modify the geometry of the tree parts without affecting the transforms of the children component.
+I also used the Unity Pro Builder package to modify the geometry of the tree parts without affecting the transforms of the children components.
 Before using ProBuilder, scaling the tree trunk would mess with the scale of the children transforms, so using Pro Builder allowed me to modify the geometry without touching the scale in the trunk's transform.
+Once I used ProBuilder to make the geometry I wanted, I removed the ProBuilder scripts that way no errors would occur when importing the asset package.
+
+PLEASE NOTE: This Asset package will not work correctly if the Input System package is not installed.
