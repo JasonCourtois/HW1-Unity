@@ -8,8 +8,8 @@ public class CameraControl : MonoBehaviour
     private InputAction _moveAction;
     
     // Speed Variables
-    [SerializeField, Range(0f, 100f)] private float _rotateSpeed = 50;
-    [SerializeField, Range(0f, 20f)] private float _moveSpeed = 7;
+    [SerializeField, Range(0f, 100f)] private float _rotateSpeed = 75;
+    [SerializeField, Range(0f, 50f)] private float _moveSpeed = 10;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

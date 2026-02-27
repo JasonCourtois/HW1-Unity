@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1862d645f41bf50418ebc964cc93ad14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeColor
-  _lerpRate: 0.15
+  _lerpRate: 0.9
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,8 +657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 790e334c352a87e46a0ed98416d57205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraControl
-  _rotateSpeed: 50
-  _moveSpeed: 7
+  _rotateSpeed: 75
+  _moveSpeed: 10
 --- !u!1001 &1231475104
 PrefabInstance:
   m_ObjectHideFlags: 0

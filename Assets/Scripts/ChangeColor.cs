@@ -12,7 +12,7 @@ public class ChangeColor : MonoBehaviour
     private Color[] _colors = new Color[] {Color.red, Color.blue, Color.green};
     private int _newColorIndex = 0;
     private Coroutine _colorCoroutine;  // Reference to coroutine stored to stop it when c is pressed.
-    [SerializeField, Range(0f, 1f)] private float _lerpRate = 0.2f;    // Rate colors will be transitioned at.
+    [SerializeField, Range(0f, 2f)] private float _lerpRate = 0.9f;    // Rate colors will be transitioned at.
 
     // Renderer used to access current material of object.
     private Renderer _renderer;
